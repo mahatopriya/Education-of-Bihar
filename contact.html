@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+   <header>
+       <nav class="navbar">
+           <div class="logo">Bihar Education</div>
+           <ul class="nav-links">
+               <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+               <li><a href="history.html"><i class="fas fa-landmark"></i> History</a></li>
+               <li><a href="modern.html"><i class="fas fa-graduation-cap"></i> Modern Education</a></li>
+               <li><a href="inspire.html"><i class="fas fa-star"></i> Inspiring Stories</a></li>
+               <li><a href="interactive.html"><i class="fas fa-comments"></i> Interactive</a></li>
+               <li><a href="map.html"><i class="fas fa-map-marked-alt"></i> Map</a></li>
+               <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+           </ul>
+       </nav>
+   </header>
+<div class="form-container">
+ <h2>Contact Us</h2>
+
+
+ <form action="/submit-form" method="POST">
+   <div class="form-group">
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required>
+   </div>
+
+
+   <div class="form-group">
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+   </div>
+
+
+   <div class="form-group">
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" rows="4" required></textarea>
+   </div>
+
+
+   <div class="form-group">
+     <button type="submit">Submit</button>
+   </div>
+ </form>
+</div>
+
+
+</body>
+</html>
