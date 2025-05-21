@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bihar Modern Education</title>
+    <link rel="stylesheet" href="style5.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ======= Header/Navbar ======= -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Left) -->
+            <div class="logo" data-en="Bihar Education" data-hi="बिहार शिक्षा">
+                <i class="fas fa-pencil-alt"></i>
+                <span id="logo-text"></span>
+            </div>
+
+            <!-- Nav Links (Right) -->
+            <div class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> <span data-en="Home" data-hi="मुखपृष्ठ"></span></a></li>
+                <li><a href="history.html"><i class="fas fa-landmark"></i> <span data-en="History" data-hi="इतिहास"></span></a></li>
+                <li><a href="modern2.html"><i class="fas fa-graduation-cap"></i> <span data-en="Modern Education" data-hi="आधुनिक शिक्षा"></span></a></li>
+               <li><a href="inspire.html"><i class="fas fa-star"></i> <span data-en="Inspiring Stories" data-hi="प्रेरणादायक कहानियाँ">Inspiring Stories</span></a></li>
+               <li><a href="rule.html"><i class="fas fa-comments"></i> <span data-en="Rules and Acts" data-hi="नियम और अधिनियम">Rules and Acts</span></a></li>
+                <li><a href="map.html"><i class="fas fa-map-marked-alt"></i> <span data-en="Map" data-hi="जिला मानचित्र"></span></a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> <span data-en="Contact Us" data-hi="संपर्क करें"></span></a></li>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======= Main Title ======= -->
+    <h1 data-en="Bihar Modern Education" data-hi="बिहार की आधुनिक शिक्षा"></h1>
+
+    <!-- ======= Language Switcher ======= -->
+    <div class="language-switcher">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('hi')">हिन्दी</button>
+    </div>
+
+    <!-- ======= Hero Section ======= -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 data-en="Reforming Bihar's Education System" data-hi="बिहार की शिक्षा प्रणाली में सुधार"></h2>
+            <p data-en="Explore how Bihar is embracing modern techniques to empower education."
+                data-hi="जानिए कैसे बिहार आधुनिक तरीकों को अपनाकर शिक्षा को सशक्त बना रहा है।"></p>
+        </div>
+    </section>
+
+    <!-- ======= Content Section ======= -->
+    <div class="container">
+        <div class="content">
+            <h2 data-en="Bihar's Steps Towards Modern Education" data-hi="बिहार की ओर से आधुनिक शिक्षा की पहल"></h2>
+            <p data-en="Bihar has taken key steps to improve its education system using modern methods and digital tools."
+                data-hi="बिहार ने अपनी शिक्षा प्रणाली को बेहतर बनाने के लिए आधुनिक विधियाँ और डिजिटल टूल्स अपनाए हैं।">
+            </p>
+
+            <ul>
+                <li>
+                    <strong><a href="https://prayatnaworld.org/digitalization-of-government-schools-bihar/"
+                            target="_blank" data-en="Digital Classrooms:" data-hi="डिजिटल कक्षाएं:">Digital
+                            Classrooms:</a></strong>
+                    <span data-en="Smart classes are being introduced in rural government schools."
+                        data-hi="ग्रामीण सरकारी स्कूलों में स्मार्ट कक्षाएं शुरू की जा रही हैं।"></span>
+                </li>
+                <li>
+                    <strong><a href="https://learningmatters.ai/blog/the-importance-of-teacher-training-programs"
+                            target="_blank" data-en="Training for Teachers:"
+                            data-hi="शिक्षकों के लिए प्रशिक्षण:">Training for Teachers:</a></strong>
+                    <span data-en="Workshops and tech-based training are being held to equip teachers."
+                        data-hi="शिक्षकों को प्रशिक्षित करने के लिए कार्यशालाएं और तकनीक-आधारित प्रशिक्षण हो रहे हैं।"></span>
+                </li>
+                <li>
+                    <strong><a href="https://skillmissionbihar.org/" target="_blank"
+                            data-en="Skill Development Programs:" data-hi="कौशल विकास कार्यक्रम:">Skill Development
+                            Programs:</a></strong>
+                    <span data-en="Programs to build communication, digital, and life skills in students."
+                        data-hi="छात्रों में संचार, डिजिटल और जीवन कौशल विकसित करने के कार्यक्रम।"></span>
+                </li>
+            </ul>
+
+            <p data-en="These efforts reflect Bihar’s commitment to a progressive and inclusive education system."
+                data-hi="ये प्रयास बिहार की उन्नत और समावेशी शिक्षा प्रणाली की प्रतिबद्धता को दर्शाते हैं।"></p>
+        </div>
+
+        <div class="image">
+            <img src="image copy 3.png" alt="Bihar Education Modernization">
+        </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <p data-en="© 2025 - Bihar Modern Education Project" data-hi="© 2025 - बिहार आधुनिक शिक्षा परियोजना"></p>
+    </footer>
+
+    <!-- ======= Language Script ======= -->
+    <script>
+        function setLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+        }
+        // Set default language
+        setLanguage('en');
+    </script>
+
+</body>
+</html>

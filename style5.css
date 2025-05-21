@@ -90,7 +90,7 @@ body {
 
 .hero {
     height: 50vh;
-    background: #002147 url('image copy 2.png') center/cover no-repeat;
+    background: #002147 url('image\ copy\ 2.png') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
