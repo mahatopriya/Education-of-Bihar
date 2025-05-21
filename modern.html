@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Education - Bihar</title>
+  <link rel="stylesheet" href="style3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-pencil-alt"></i> Bihar Education
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="history.html"><i class="fas fa-landmark"></i> History</a></li>
+        <li><a href="modern.html"><i class="fas fa-graduation-cap"></i> Modern Education</a></li>
+        <li><a href="inspire.html"><i class="fas fa-star"></i> Inspiring Stories</a></li>
+        <li><a href="rule.html"><i class="fas fa-comments"></i> Rules</a></li>
+        <li><a href="map.html"><i class="fas fa-map-marked-alt"></i> Map</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Language Switcher -->
+  <div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('hi')">हिन्दी</button>
+  </div>
+
+
+  <!-- Page Title -->
+  <header>
+    <h1 data-en="Modern Education" data-hi="आधुनिक शिक्षा">Modern Education</h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2 data-en="Welcome to Modern Education" data-hi="आधुनिक शिक्षा में आपका स्वागत है">
+        Welcome to Modern Education
+      </h2>
+      <p data-en="Learn about the new-age education system that empowers students with skills for the future."
+         data-hi="ऐसी नई शिक्षा प्रणाली के बारे में जानें जो छात्रों को भविष्य के कौशल से सशक्त बनाती है।">
+         Learn about the new-age education system that empowers students with skills for the future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <div class="content">
+        <h2 data-en="What is Modern Education?" data-hi="आधुनिक शिक्षा क्या है?">
+          What is Modern Education?
+        </h2>
+        <p data-en="Modern education refers to an educational system that incorporates technology..."
+           data-hi="आधुनिक शिक्षा ऐसी प्रणाली को कहा जाता है जो तकनीक को शामिल करती है...">
+           Modern education refers to an educational system that incorporates technology...
+        </p>
+
+        <p data-en="Key aspects of modern education include:"
+           data-hi="आधुनिक शिक्षा के मुख्य पहलू निम्नलिखित हैं:">
+           Key aspects of modern education include:
+        </p>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="https://prayatnaworld.org/digitalization-of-government-schools-bihar/" target="_blank"
+                 data-en="Digital Learning:" data-hi="डिजिटल शिक्षा:">
+                Digital Learning:
+              </a>
+            </strong>
+            <span data-en="Smart classrooms, online resources, and virtual tools engage students better."
+                  data-hi="स्मार्ट कक्षाएं, ऑनलाइन संसाधन और वर्चुअल टूल छात्रों को बेहतर तरीके से जोड़ते हैं।">
+              Smart classrooms, online resources, and virtual tools engage students better.
+            </span>
+          </li>
+
+          <li>
+            <strong>
+              <a href="https://www.caritasindia.org/eight-measures-proposed-to-improve-education-in-bihar/" target="_blank"
+                 data-en="Innovative Methods:" data-hi="नवोन्मेषी विधियाँ:">
+                Innovative Methods:
+              </a>
+            </strong>
+            <span data-en="Project-based learning, experiential learning, and real-world problem-solving are focused on."
+                  data-hi="प्रोजेक्ट आधारित शिक्षा, अनुभवजन्य शिक्षा और वास्तविक समस्याओं का समाधान मुख्य बिंदु हैं।">
+              Project-based learning, experiential learning, and real-world problem-solving are focused on.
+            </span>
+          </li>
+
+          <li>
+            <strong>
+              <a href="https://skillmissionbihar.org/" target="_blank"
+                 data-en="Skill Development:" data-hi="कौशल विकास:">
+                Skill Development:
+              </a>
+            </strong>
+            <span data-en="Emphasis on communication, teamwork, and adaptability."
+                  data-hi="संचार, टीमवर्क और अनुकूलनशीलता पर ज़ोर।">
+              Emphasis on communication, teamwork, and adaptability.
+            </span>
+          </li>
+        </ul>
+
+        <p data-en="Modern education fosters creativity and critical thinking."
+           data-hi="आधुनिक शिक्षा रचनात्मकता और आलोचनात्मक सोच को बढ़ावा देती है।">
+           Modern education fosters creativity and critical thinking.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="image.png" alt="Modern Education Image">
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p data-en="© 2025 - Modern Education Project" data-hi="© 2025 - आधुनिक शिक्षा परियोजना">
+      © 2025 - Modern Education Project
+    </p>
+  </footer>
+
+  <!-- Language Script -->
+  <script>
+    function setLanguage(lang) {
+      const elements = document.querySelectorAll('[data-en]');
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    // Set default language
+    setLanguage('en');
+  </script>
+
+</body>
+</html>
